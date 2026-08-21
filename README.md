@@ -4,6 +4,10 @@ An end-to-end machine learning project for predicting customer churn using custo
 
 The project covers exploratory data analysis, model comparison, feature importance analysis, threshold optimization, and deployment with Streamlit.
 
+### 🚀 Demo
+
+The application provides an interactive interface where users can enter customer information and receive a churn probability and risk classification.
+
 ---
 
 ## 🎯 Project Overview
@@ -116,13 +120,13 @@ Three classification models were evaluated:
 
 The XGBoost model achieved the highest ROC-AUC among the evaluated models.
 
-| Model               |   ROC-AUC |
-| ------------------- | --------: |
-| Logistic Regression |     0.849 |
-| Random Forest       |     0.834 |
-| XGBoost             | **0.856** |
+| Model | Accuracy | ROC-AUC |
+|---|---:|---:|
+| Logistic Regression | 0.802 | 0.849 |
+| Random Forest | 0.775 | 0.834 |
+| XGBoost | **0.805** | **0.856** |
 
-The final model was selected based on its overall predictive performance, particularly ROC-AUC.
+XGBoost was selected as the final model because it achieved the highest ROC-AUC among the evaluated models.
 
 ---
 
@@ -226,6 +230,18 @@ Churn Probability: 48.00%
 
 ---
 
+### 📸 Demo
+
+#### Low Risk
+
+![Low Risk Prediction](screenshots/low-risk.png)
+
+#### High Risk
+
+![High Risk Prediction](screenshots/high-risk.png)
+
+---
+
 ## 🛠️ Technologies
 
 * Python
@@ -249,8 +265,6 @@ customer-churn-prediction/
 ├── data/
 │
 ├── models/
-│   ├── churn_model.pkl
-│   └── threshold.pkl
 │
 ├── notebooks/
 │   └── 01_data_exploration.ipynb
