@@ -253,7 +253,8 @@ customer-churn-prediction/
 │   └── threshold.pkl
 │
 ├── notebooks/
-│   └── customer_churn_analysis.ipynb
+│   └── 01_data_exploration.ipynb
+│   └── 02_model_training.ipynb
 │
 ├── src/
 │   └── predict.py
